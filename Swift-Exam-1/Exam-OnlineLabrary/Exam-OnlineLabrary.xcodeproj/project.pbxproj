@@ -16,7 +16,6 @@
 		A6DA6BFE2788A4A9004CF486 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BFD2788A4A9004CF486 /* MainTabBarController.swift */; };
 		A6DA6C002788AA52004CF486 /* BookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BFF2788AA52004CF486 /* BookTVC.swift */; };
 		A6DA6C022788AAA6004CF486 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6C012788AAA6004CF486 /* TableViewController.swift */; };
-		A6DA6C242788B415004CF486 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6C232788B415004CF486 /* TableViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		A6DA6BFD2788A4A9004CF486 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A6DA6BFF2788AA52004CF486 /* BookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTVC.swift; sourceTree = "<group>"; };
 		A6DA6C012788AAA6004CF486 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		A6DA6C232788B415004CF486 /* TableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				A6DA6BFD2788A4A9004CF486 /* MainTabBarController.swift */,
 				A6DA6BFF2788AA52004CF486 /* BookTVC.swift */,
 				A6DA6C012788AAA6004CF486 /* TableViewController.swift */,
-				A6DA6C232788B415004CF486 /* TableViewController2.swift */,
 			);
 			path = "Exam-OnlineLabrary";
 			sourceTree = "<group>";
@@ -153,7 +150,6 @@
 				A6DA6BE82788A1B4004CF486 /* AppDelegate.swift in Sources */,
 				A6DA6C022788AAA6004CF486 /* TableViewController.swift in Sources */,
 				A6DA6BFC2788A23C004CF486 /* BookModel.swift in Sources */,
-				A6DA6C242788B415004CF486 /* TableViewController2.swift in Sources */,
 				A6DA6C002788AA52004CF486 /* BookTVC.swift in Sources */,
 				A6DA6BFE2788A4A9004CF486 /* MainTabBarController.swift in Sources */,
 				A6DA6BEA2788A1B4004CF486 /* SceneDelegate.swift in Sources */,

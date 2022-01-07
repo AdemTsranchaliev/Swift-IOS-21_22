@@ -10,6 +10,8 @@ import UIKit
 class BookTVC: UITableViewCell {
     @IBOutlet weak var SummaryView: UILabel!
     @IBOutlet weak var AuthorView: UILabel!
-    @IBOutlet weak var ImageView: UIView!
+
+    @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var TitleView: UILabel!
+
 }

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="111" width="414" height="689"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="116" id="uoq-nK-t27" customClass="BookTVC" customModule="Exam_OnlineLabrary">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="116" id="uoq-nK-t27">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uoq-nK-t27" id="eY0-Jz-WgN">
@@ -55,13 +56,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="AuthorView" destination="Iwd-2M-KPx" id="JTa-04-zIk"/>
-                                            <outlet property="ImageView" destination="CYz-hD-mg3" id="rZ5-UG-cs5"/>
-                                            <outlet property="SummaryView" destination="YuG-Ft-dSj" id="2Sm-JQ-WQy"/>
-                                            <outlet property="TitleView" destination="T4O-JC-kNn" id="U8v-HM-VZ8"/>
-                                            <segue destination="Qgq-x5-HRa" kind="show" id="5Dx-VV-eVQ"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -91,82 +85,69 @@
         <scene sceneID="3nR-LR-fai">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJZ-Xs-RS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="7cV-aN-8wL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hWh-5r-zcA" customClass="UITableView">
+                <viewController id="7cV-aN-8wL" customClass="TableViewController" customModule="Exam_OnlineLabrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="99" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="mJj-oS-59N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-2V-9dJ">
-                                <rect key="frame" x="20" y="70" width="110" height="46"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vrn-GO-o5G">
-                                <rect key="frame" x="0.0" y="104" width="414" height="689"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="116" id="6Wk-bI-dPF" customClass="BookTVC" customModule="Exam_OnlineLabrary">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="116"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Wk-bI-dPF" id="jwD-CH-vSt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-Ye-Mns">
-                                                    <rect key="frame" x="20" y="6" width="78" height="104"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5d-E6-vhE">
-                                                    <rect key="frame" x="106" y="11" width="254" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Athor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdT-j6-fXf">
-                                                    <rect key="frame" x="106" y="41" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSF-gm-GSp">
-                                                    <rect key="frame" x="106" y="70" width="297" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" systemColor="opaqueSeparatorColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="AuthorView" destination="cdT-j6-fXf" id="gOr-dq-2uo"/>
-                                            <outlet property="ImageView" destination="9Bo-Ye-Mns" id="hr4-f6-FSX"/>
-                                            <outlet property="SummaryView" destination="oSF-gm-GSp" id="zs0-Cv-DNS"/>
-                                            <outlet property="TitleView" destination="I5d-E6-vhE" id="8kA-Iz-Nki"/>
-                                            <segue destination="Qgq-x5-HRa" kind="show" id="BsN-d2-0SO"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Uwd-Fs-uXQ"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="vrn-GO-o5G" firstAttribute="bottom" secondItem="Uwd-Fs-uXQ" secondAttribute="bottom" id="84N-x9-36b"/>
-                            <constraint firstItem="vrn-GO-o5G" firstAttribute="trailing" secondItem="Uwd-Fs-uXQ" secondAttribute="trailing" id="MvD-dl-bFS"/>
-                            <constraint firstItem="Xf6-2V-9dJ" firstAttribute="top" secondItem="Uwd-Fs-uXQ" secondAttribute="top" constant="26" id="aDd-k4-aXI"/>
-                            <constraint firstItem="vrn-GO-o5G" firstAttribute="leading" secondItem="Uwd-Fs-uXQ" secondAttribute="leading" id="liC-6q-BTa"/>
-                            <constraint firstItem="Xf6-2V-9dJ" firstAttribute="leading" secondItem="Uwd-Fs-uXQ" secondAttribute="leading" constant="20" id="zOJ-5C-qaf"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Books" selectedImage="book.fill" catalog="system" id="mBO-UB-dmy">
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="134" id="0hX-LW-mpQ" customClass="BookTVC" customModule="Exam_OnlineLabrary">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="134"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0hX-LW-mpQ" id="hcI-fp-4he">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wjp-bb-Isb">
+                                            <rect key="frame" x="20" y="6" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHq-Dy-sRc">
+                                            <rect key="frame" x="106" y="0.0" width="254" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Athor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ8-we-sjA">
+                                            <rect key="frame" x="106" y="40" width="288" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKJ-1E-NAk">
+                                            <rect key="frame" x="106" y="88" width="297" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chevron.right" catalog="system" highlightedImage="chevron.right" translatesAutoresizingMaskIntoConstraints="NO" id="1wQ-cj-zHQ">
+                                            <rect key="frame" x="372" y="11" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="AuthorView" destination="zZ8-we-sjA" id="Nwv-dc-3a4"/>
+                                    <outlet property="ImageView" destination="Wjp-bb-Isb" id="2yj-FE-ESG"/>
+                                    <outlet property="SummaryView" destination="NKJ-1E-NAk" id="AiJ-9d-mva"/>
+                                    <outlet property="TitleView" destination="NHq-Dy-sRc" id="WTB-DK-BH6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Books" id="mBO-UB-dmy">
                         <color key="badgeColor" systemColor="systemGray2Color"/>
+                        <imageReference key="selectedImage" image="book.fill" catalog="system" symbolScale="default" renderingMode="original"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="mJj-oS-59N" id="dHO-6s-jGp"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="988" y="-505"/>
+            <point key="canvasLocation" x="986.95652173913049" y="-505.58035714285711"/>
         </scene>
         <!--BookName-->
         <scene sceneID="TM2-rk-Iva">
@@ -174,7 +155,7 @@
                 <navigationController id="Qgq-x5-HRa" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="BookName" id="cFC-fx-pja"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vxB-PP-ZoF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
@@ -201,11 +182,9 @@
             <point key="canvasLocation" x="98" y="-201"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="BsN-d2-0SO"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
