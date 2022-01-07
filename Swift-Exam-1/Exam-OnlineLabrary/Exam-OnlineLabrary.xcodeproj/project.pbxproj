@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		A6DA6BE82788A1B4004CF486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BE72788A1B4004CF486 /* AppDelegate.swift */; };
 		A6DA6BEA2788A1B4004CF486 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BE92788A1B4004CF486 /* SceneDelegate.swift */; };
-		A6DA6BEC2788A1B4004CF486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BEB2788A1B4004CF486 /* ViewController.swift */; };
 		A6DA6BEF2788A1B4004CF486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DA6BED2788A1B4004CF486 /* Main.storyboard */; };
 		A6DA6BF12788A1B5004CF486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DA6BF02788A1B5004CF486 /* Assets.xcassets */; };
 		A6DA6BF42788A1B5004CF486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DA6BF22788A1B5004CF486 /* LaunchScreen.storyboard */; };
 		A6DA6BFC2788A23C004CF486 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BFB2788A23C004CF486 /* BookModel.swift */; };
+		A6DA6BFE2788A4A9004CF486 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BFD2788A4A9004CF486 /* MainTabBarController.swift */; };
+		A6DA6C002788AA52004CF486 /* BookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BFF2788AA52004CF486 /* BookTVC.swift */; };
+		A6DA6C022788AAA6004CF486 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6C012788AAA6004CF486 /* TableViewController.swift */; };
+		A6DA6C242788B415004CF486 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6C232788B415004CF486 /* TableViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6DA6BE42788A1B4004CF486 /* Exam-OnlineLabrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exam-OnlineLabrary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DA6BE72788A1B4004CF486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6DA6BE92788A1B4004CF486 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6DA6BEB2788A1B4004CF486 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6DA6BEE2788A1B4004CF486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6DA6BF02788A1B5004CF486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6DA6BF32788A1B5004CF486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6DA6BF52788A1B5004CF486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6DA6BFB2788A23C004CF486 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		A6DA6BFD2788A4A9004CF486 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A6DA6BFF2788AA52004CF486 /* BookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTVC.swift; sourceTree = "<group>"; };
+		A6DA6C012788AAA6004CF486 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A6DA6C232788B415004CF486 /* TableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				A6DA6BE72788A1B4004CF486 /* AppDelegate.swift */,
 				A6DA6BE92788A1B4004CF486 /* SceneDelegate.swift */,
-				A6DA6BEB2788A1B4004CF486 /* ViewController.swift */,
 				A6DA6BED2788A1B4004CF486 /* Main.storyboard */,
 				A6DA6BF02788A1B5004CF486 /* Assets.xcassets */,
 				A6DA6BF22788A1B5004CF486 /* LaunchScreen.storyboard */,
 				A6DA6BF52788A1B5004CF486 /* Info.plist */,
 				A6DA6BFB2788A23C004CF486 /* BookModel.swift */,
+				A6DA6BFD2788A4A9004CF486 /* MainTabBarController.swift */,
+				A6DA6BFF2788AA52004CF486 /* BookTVC.swift */,
+				A6DA6C012788AAA6004CF486 /* TableViewController.swift */,
+				A6DA6C232788B415004CF486 /* TableViewController2.swift */,
 			);
 			path = "Exam-OnlineLabrary";
 			sourceTree = "<group>";
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DA6BEC2788A1B4004CF486 /* ViewController.swift in Sources */,
 				A6DA6BE82788A1B4004CF486 /* AppDelegate.swift in Sources */,
+				A6DA6C022788AAA6004CF486 /* TableViewController.swift in Sources */,
 				A6DA6BFC2788A23C004CF486 /* BookModel.swift in Sources */,
+				A6DA6C242788B415004CF486 /* TableViewController2.swift in Sources */,
+				A6DA6C002788AA52004CF486 /* BookTVC.swift in Sources */,
+				A6DA6BFE2788A4A9004CF486 /* MainTabBarController.swift in Sources */,
 				A6DA6BEA2788A1B4004CF486 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
