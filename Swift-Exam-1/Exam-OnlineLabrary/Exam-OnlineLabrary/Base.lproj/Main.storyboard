@@ -138,7 +138,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Books" id="mBO-UB-dmy">
+                    <tabBarItem key="tabBarItem" title="Books" image="book" catalog="system" id="mBO-UB-dmy">
                         <color key="badgeColor" systemColor="systemGray2Color"/>
                         <imageReference key="selectedImage" image="book.fill" catalog="system" symbolScale="default" renderingMode="original"/>
                     </tabBarItem>
@@ -183,6 +183,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <systemColor name="opaqueSeparatorColor">
