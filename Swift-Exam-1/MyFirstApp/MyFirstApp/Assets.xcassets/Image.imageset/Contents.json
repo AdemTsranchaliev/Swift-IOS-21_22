@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "brainstorm-concept-creative-people-have-idea-working-together-with-laptop-successful-team-in-coworking-space-developing-project-partnership-cartoon-flat-illustration-vector.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "brainstorm-concept-creative-people-have-idea-working-together-with-laptop-successful-team-in-coworking-space-developing-project-partnership-cartoon-flat-illustration-vector 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "brainstorm-concept-creative-people-have-idea-working-together-with-laptop-successful-team-in-coworking-space-developing-project-partnership-cartoon-flat-illustration-vector 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
